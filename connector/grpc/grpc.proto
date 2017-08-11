@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+package grpc;
+
+message UserPassword {
+    string username = 1;
+    string password = 2;
+}
+
+message UserID {
+    string userid = 1;
+}
+
+message IdentityMessage {
+    string userid = 1;
+    string username = 2;
+    string email = 3;
+}
